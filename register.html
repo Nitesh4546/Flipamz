@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register</title>
+    <style>
+        /* HEADER  */
+        @media screen and (max-height: 200px){
+            .cont{
+                background-image: url('/img/mobilehome.jpg');
+            }
+        }
+        .head {
+            border: 2px solid black;
+            border-radius: 10px;
+
+        }
+    .cont{
+        margin: 30px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .cont:hover {
+        transform: scale(1.1); /* Enlarges the image by 20% */
+    }
+
+        header {
+            background: rgb(41, 40, 40);
+            color: white;
+            padding: 15px;
+            font-size: 24px;
+
+        }
+
+        header a {
+            text-decoration: none;
+            color: wheat;
+            text-align: center;
+        }
+
+        header a:hover {
+            border: 2px solid rgba(240, 248, 255, 0.479);
+            background-color: rgba(240, 248, 255, 0.479);
+            color: black;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        nav {
+            background: #444;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            border: 2px solid rgba(240, 248, 255, 0.479);
+            background-color: rgba(240, 248, 255, 0.479);
+            color: black;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        /* FOOTER  */
+        .foot{
+            background: rgb(41, 40, 40);
+            color: white;
+            padding: 15px;
+            font-size: 24px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        .foot a:visited{
+            color: green;
+        }
+        .foot a:hover{
+            color: red;
+        }
+        .foot a:active{
+            color: cyan;
+        }
+        /* CONTENT  */
+        .cont{
+            background-image: url('/img/reg.avif');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: wheat;
+            text-align: center;
+            padding: 20px;
+            padding-top: 50px;
+            font-weight: bold;
+            height: 400px;
+        }
+        .reg{
+            height: 250px;
+            padding: 10px;
+            width: 300px;
+        }
+        .reg:hover{
+            background-color: rgba(0, 255, 255, 0.469);
+            border: 2px solid rgba(0, 255, 255, 0.587);
+            border-radius: 10px;
+        }
+
+        </style>
+    </head>
+    
+    <body>
+        <div class="head">
+            <header><a href="index.html">Flipamz</a></header>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="register.html">Register</a>
+            </nav>
+        </div>
+        <div class="cont">
+            <div class="reg">
+                <form action="" method="post">
+                    First Name: <input type="text" name="fn" required placeholder="Enter first name"><br><br>
+                    Last Name: <input type="text" name="ln" placeholder="Enter last name"><br><br>
+                    User Name: <input type="text" name="un" placeholder="Enter user name" required><br><br>
+                    Phone no.: <input name="num"  required placeholder="Enter phone number"><br><br>
+                    Email: <input type="enail" name="em" required placeholder="Enter email"><br><br>
+                    Gender: Male<input type="radio" name="g"> Female<input type="radio" name="g"><br><br>
+                    <input type="submit" name="submit">
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="foot">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+                <h3>Contact</h3>
+                <p>Email: <a href="" style="text-decoration: underline;">support@flipamz.com</a></p>
+                <p>Phone: +123 456 7890</p>
+                <p>&copy; 2025 Flipamz. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>
